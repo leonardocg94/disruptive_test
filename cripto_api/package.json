@@ -1,0 +1,32 @@
+{
+  "name": "cripto_api",
+  "version": "1.0.0",
+  "description": "Ejercicio técnico para Disruptive",
+  "main": "index.js",
+  "scripts": {
+    "tsc:watch": "npx tsc --watch",
+    "build": "npx tsc",
+    "nodemon": "nodemon build/index.js",
+    "start": "node build/index.js",
+    "build:start": "npm-run-all build start",
+    "dev": "npm-run-all --parallel tsc:watch nodemon"
+  },
+  "author": "Rodríguez Sánchez Leonardo Carlos Gabriel",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.16.3",
+    "nodemon": "^2.0.22",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "socket.io": "^4.6.1",
+    "yup": "^1.1.1"
+  }
+}
